@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/wallet_holo_blue_light">
+	<LinearLayout 
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:weightSum="0.55"
+	    android:orientation="vertical" >
+	    
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="3"
+	        android:background="@color/wallet_hint_foreground_holo_dark" >
+
+	        
+		    <ImageView
+		        android:id="@+id/imgvfrienddetailsuserpic"
+		        android:layout_width="100dp"
+		        android:layout_height="100dp"
+		        android:src="@drawable/userboy1"
+		        android:padding="3dp"
+		        android:contentDescription="UserImage" />
+
+
+		    <TextView
+		        android:id="@+id/tvfrienddetailscontactno"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/imgvfrienddetailsuserpic"
+		        android:textColor="@color/white"
+		        android:padding="3dp"
+		        android:textSize="15dp"
+		        android:text="contactnumber" />
+
+		    <TextView
+		        android:id="@+id/tvfrienddetailsemailid"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_below="@id/tvfrienddetailscontactno"
+		        android:textColor="@color/white"
+		        android:textSize="15dp"
+		        android:padding="3dp"
+		        android:text="EmailId" />
+
+		  
+
+		    <TextView
+		        android:id="@+id/tvfrienddetailsname"
+		        android:layout_width="wrap_content"
+		        android:layout_height="wrap_content"
+		        android:layout_alignParentTop="true"
+		        android:layout_marginTop="16dp"
+		        android:layout_toRightOf="@+id/imgvfrienddetailsuserpic"
+		        android:text="name"
+		        android:textColor="@color/white"
+		        android:paddingLeft="3dp"
+		        android:textSize="35dp" />
+
+		    <ImageButton
+			    android:id="@+id/btnfriendsdetailslocationmanagement"
+			    android:layout_width="180dp"
+			    android:layout_height="50dp"
+			    android:scaleType="fitCenter"
+		        android:background="@null"
+			    android:layout_below="@id/tvfrienddetailsemailid"
+			    android:layout_centerHorizontal="true"
+			    android:src="@drawable/frienddetaillocationmgtbutton" />
+		    
+		                  
+	    </RelativeLayout>
+	    <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="2"
+			android:layout_margin="5dp"
+	        android:background="@color/white">
+		    
+		  <TextView
+		      android:id="@+id/usermiddlename"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="Middle Name"
+		      android:textSize="20dp"
+		       />
+		      
+		      
+		  <TextView
+		      android:id="@+id/tvusermiddlename"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="middlename"
+		      android:layout_below="@id/usermiddlename"
+		   />
+		  
+		  <TextView
+		      android:id="@+id/gender"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:text="Gender"
+		      android:layout_marginTop="3dp"
+		      android:layout_below="@id/tvusermiddlename"
+		      android:textSize="20dp"
+		   />
+		  
+		    <TextView
+		      android:id="@+id/tvusergender"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="gender"
+		      android:layout_below="@id/gender"
+		   />
+		    
+		    <TextView
+		      android:id="@+id/country"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="Your Registered Country"
+		      android:layout_below="@id/tvusergender"
+		      android:textSize="20dp"
+		   />
+		  
+		    <TextView
+		      android:id="@+id/tvusercountry"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="country"
+		      android:layout_below="@id/country"
+		   />
+		    
+			 <TextView
+		      android:id="@+id/registrationdate"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="You Registered On"
+		      android:layout_below="@id/tvusercountry"
+		      android:textSize="20dp"
+		      
+		   />
+		  
+		      <TextView
+		      android:id="@+id/tvuserregistrationdate"
+		      android:layout_height="wrap_content"
+		      android:layout_width="wrap_content"
+		      android:layout_marginTop="3dp"
+		      android:text="registrationdate"
+		      android:layout_below="@id/registrationdate"
+		   />
+		     
+		     
+		    
+	   	</RelativeLayout>      
+	     <RelativeLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="0dp"
+	        android:layout_weight="1"
+	        android:layout_margin="5dp"
+	        android:background="@color/white">
+
+	        <ImageButton
+	            android:id="@+id/btnlogout"
+	        android:layout_width="180dp"
+			    android:layout_height="50dp"
+	            android:layout_alignParentTop="true"
+	            android:layout_centerHorizontal="true"
+	             android:background="@null"
+	 	    	android:scaleType="fitCenter"
+	 	    	android:src="@drawable/btnlogout"/>
+	        
+	       
+
+	    </RelativeLayout>
+	</LinearLayout>
+</ScrollView>

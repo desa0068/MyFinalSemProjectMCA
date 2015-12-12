@@ -1,0 +1,42 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    <item
+        android:id="@+id/refreshButton"
+        android:icon="@drawable/ic_action_refresh"
+        android:showAsAction="always"
+        android:title=""/>
+   
+    <item
+        android:id="@+id/generalalerts"
+        android:showAsAction="always"
+         android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:scaleType="fitCenter"
+        android:background="@null"
+        android:icon="@drawable/generalalerts"
+        android:title=""/>
+    <item
+        android:id="@+id/locationalerts"
+        android:icon="@drawable/locationalert"
+        android:showAsAction="always"
+        android:title=""/>
+ 
+    <item
+        android:id="@+id/adduser"
+        android:icon="@drawable/ic_action_help"
+        android:showAsAction="collapseActionView"
+        android:title="Add Friend"/>
+    
+    <item
+        android:id="@+id/addgroup"
+        android:icon="@drawable/ic_action_help"
+        android:showAsAction="collapseActionView"
+        android:title="Add Group"/>
+    
+    <item
+        android:id="@+id/userprofile"
+        android:icon="@drawable/ic_action_help"
+        android:showAsAction="collapseActionView"
+        android:title="Profile"/>
+   
+
+</menu>

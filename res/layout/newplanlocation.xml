@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+    <TextView 
+     	android:id="@+id/lblnewplannotificationtype"
+     	android:layout_height="wrap_content"
+     	android:layout_width="wrap_content"
+     	android:text="Notification Type"   
+     	android:layout_marginTop="20dp"
+     	android:layout_marginLeft="14dp"
+     />
+       <Spinner
+        android:id="@+id/spinnernewplanselecttype"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+		android:layout_marginTop="10dp"
+        android:layout_marginLeft="14dp"
+        android:layout_below="@id/lblnewplannotificationtype" 
+       	android:background="#6F4E37"	
+        android:popupBackground="#909090"
+        
+       />
+      <EditText
+     	android:id="@+id/txtnewplantimeinterval"
+     	android:layout_height="wrap_content"
+     	android:layout_width="wrap_content"
+     	android:text="Time"   
+     	android:layout_below="@id/spinnernewplanselecttype"
+     	android:layout_marginLeft="14dp"
+     /> 
+      <EditText
+     	android:id="@+id/txtnewplanplacename"
+     	android:layout_height="wrap_content"
+     	android:layout_width="wrap_content"
+     	android:text="Place Name"   
+     	android:layout_below="@id/txtnewplantimeinterval"
+     	android:layout_marginLeft="14dp"
+     />
+        <com.google.android.gms.maps.MapView
+        android:id="@+id/map"
+        android:layout_width="match_parent"
+        android:layout_height="250dp" 
+        android:layout_below="@id/txtnewplanplacename"
+    >
+      
+         	
+    </com.google.android.gms.maps.MapView>
+
+        <Button
+            android:id="@+id/btnnewplanlocationfind"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/txtnewplanplacename"
+            android:layout_alignBottom="@+id/txtnewplanplacename"
+            android:layout_marginLeft="31dp"
+            android:layout_toRightOf="@+id/txtnewplanplacename" 
+            android:text="Find"/>
+
+         <Button
+             android:id="@+id/btnnewplanlocationfind"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignParentBottom="true"
+             android:layout_alignParentRight="true"
+             android:layout_marginRight="30dp"
+             android:text="Cancel" />
+
+         <Button
+             android:id="@+id/btnnewplanlocationfind"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_alignLeft="@+id/txtnewplanplacename"
+             android:layout_alignParentBottom="true"
+             android:text="Save Location" />
+       
+</RelativeLayout>

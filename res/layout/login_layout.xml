@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_holo_blue_light">
+	
+	<RelativeLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent" >
+
+		<ImageView
+	        android:id="@+id/logo"
+	        android:layout_width="200dp"
+	        android:layout_height="150dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/app_logo" />
+	    
+	    
+	    <RelativeLayout
+	        android:layout_width="fill_parent"
+	        android:layout_height="fill_parent"
+	        android:layout_below="@id/logo"
+	        android:layout_marginLeft="@dimen/feed_item_margin"
+	        android:layout_marginRight="@dimen/feed_item_margin"
+	        android:layout_marginTop="2dp"
+	        android:background="@drawable/bg_parent_rounded_corner"
+	        android:orientation="vertical"
+	        android:paddingBottom="@dimen/feed_item_padding_top_bottom"
+	        android:paddingTop="@dimen/feed_item_padding_top_bottom" >
+
+	        <TextView
+	            android:id="@+id/tv_uname"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="15dp"
+	            android:text="*Mobile number"
+	            android:textSize="22dp"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/et_login_uname"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_uname"
+	            android:layout_margin="5dp"
+	            android:background="@drawable/edittext_change"
+	            android:hint="Enter your mobile number"
+	            android:singleLine="true" />
+
+	        <TextView
+	            android:id="@+id/tv_pwd"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/et_login_uname"
+	            android:layout_marginLeft="5dp"
+	            android:layout_marginTop="25dp"
+	            android:text="*Password"
+	            android:textSize="22dp"
+	            android:textStyle="bold" />
+
+	        <EditText
+	            android:id="@+id/et_login_pwd"
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@id/tv_pwd"
+	            android:layout_margin="5dp"
+	            android:background="@drawable/edittext_change"
+	            android:hint="Enter your password"
+	            android:inputType="textPassword"
+	            android:singleLine="true" />
+
+	        <ImageButton
+	            android:id="@+id/btn_login"
+	            android:layout_width="wrap_content"
+	            android:layout_height="wrap_content"
+	            android:layout_below="@+id/et_login_pwd"
+	            android:layout_centerHorizontal="true"
+	            android:layout_marginTop="30dp"
+	            android:background="@drawable/login_button" />
+	        
+			<TextView
+			    android:id="@+id/txtsignup"
+			    android:layout_width="wrap_content"
+			    android:layout_height="wrap_content"
+			    android:layout_below="@id/btn_login"
+			    android:text="Sign Up"
+			    android:layout_centerHorizontal="true"
+			    android:layout_marginTop="20dp"
+			    />
+	    </RelativeLayout>
+
+
+	</RelativeLayout>
+
+</ScrollView>

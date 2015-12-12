@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/bg_parent_rounded_corner"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:paddingLeft="5dp">
+        
+	    <ImageButton
+	        android:id="@+id/btnsettingsuserhomefriendlist"
+	        android:layout_width="70dp"
+	        android:layout_height="50dp"
+	        android:layout_alignBottom="@+id/btnuserhometracklocation"
+	        android:layout_alignParentRight="true"
+	        android:layout_below="@+id/tvuserhomefriendlistname"
+	        android:background="@null"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/userhomeoptionbutton" />
+	
+	    <TextView
+	        android:id="@+id/tvuserhomefriendlistname"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentTop="true"
+	        android:layout_alignRight="@+id/btnsettingsuserhomefriendlist"
+	        android:layout_toRightOf="@+id/imgvuserhomefriendlist"
+	        android:text="Username"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <ImageView
+	        android:id="@+id/imgvuserhomefriendlist"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/userboy1" />
+
+	    <ImageButton
+	        android:id="@+id/btnuserhometracklocation"
+	        android:layout_width="70dp"
+	        android:layout_height="50dp"
+	        android:layout_below="@+id/tvuserhomefriendlistname"
+	        android:layout_toLeftOf="@+id/btnsettingsuserhomefriendlist"
+	        android:background="@null"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/userhometracklocationbutton"/>
+
+	    <TextView
+	        android:id="@+id/tvuserhomefriendlistrelation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignBottom="@+id/imgvuserhomefriendlist"
+	        android:layout_alignLeft="@+id/tvuserhomefriendlistname"
+	        android:text="Relation"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	</RelativeLayout>
+</RelativeLayout>

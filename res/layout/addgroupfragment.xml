@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/wallet_holo_blue_light">
+    
+	<LinearLayout  
+        android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:weightSum="8"
+	    android:orientation="vertical">
+	    
+	      <RelativeLayout
+            android:id="@+id/rel1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="5dp"
+            android:layout_weight="2"
+            android:background="@color/white"
+            android:padding="15dp" >
+	   	    
+	    <TextView
+	        android:id="@+id/addgrouptxtentergroupname"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="Enter Group Name"
+	   />
+	      <EditText
+	           	android:id="@+id/addgroupedtgroupname"
+	         	android:layout_height="wrap_content"
+	         	android:layout_width="match_parent"
+	 			android:layout_below="@id/addgrouptxtentergroupname"
+	 			        	
+	           
+	           >
+	          
+	      </EditText>
+	       </RelativeLayout>
+	        <RelativeLayout
+				      	android:id="@+id/rel2"
+				        android:layout_width="match_parent"
+	        		    android:layout_height="0dp"
+				        android:layout_weight="4"
+						android:layout_marginLeft="10dp"
+            			android:layout_marginRight="10dp"
+            			android:layout_marginTop="5dp"
+            			android:layout_marginBottom="5dp"
+				        android:layout_below="@id/rel1" 
+				        android:padding="15dp"
+				        android:background="@color/white"
+							      >
+	       <TextView
+	        android:id="@+id/addgrouptxtselectgroupname"
+	        android:layout_height="wrap_content"
+	        android:layout_width="wrap_content"
+	        android:text="Select Group Display Picture"
+	        
+	       
+	        />
+	    
+	        <Gallery
+			        android:id="@+id/groupimages"
+			        android:layout_width="match_parent"
+			        android:layout_height="wrap_content"
+			        android:layout_below="@id/addgrouptxtselectgroupname"
+			/>
+
+    		<ImageView
+			        android:id="@+id/image1"
+			        android:layout_width="0dp"
+			        android:layout_height="0dp"
+			        android:layout_gravity="center_horizontal"
+			        android:background="@null"
+			        android:paddingTop="5dp"
+			        android:paddingBottom="5dp"
+			        android:paddingLeft="35dp"
+			        android:paddingRight="35dp"
+			        android:src="@drawable/group1" 
+			        android:layout_below="@id/groupimages"
+			        android:visibility="invisible"
+			/>
+		</RelativeLayout>
+			<RelativeLayout
+				    	android:id="@+id/rel3"
+						android:layout_width="match_parent"
+				        android:layout_height="0dp"
+				        android:layout_weight="2"
+				        android:layout_marginLeft="10dp"
+            			android:layout_marginRight="10dp"
+            			android:layout_marginTop="5dp"
+            			android:layout_marginBottom="5dp"
+				        android:layout_below="@id/rel2" 
+				        android:background="@color/white"
+				        android:padding="15dp"
+							    >
+
+	 	<ImageButton
+	 	    android:id="@+id/addgroupbtncreategroup"
+	 	    android:layout_width="180dp"
+	 	    android:layout_height="80dp"
+	 	    android:layout_alignParentTop="true"
+	 	    android:layout_centerHorizontal="true"
+	 	    android:textAlignment="center"			   
+	 	    android:background="@null"
+	 	    android:scaleType="fitCenter"
+	 	    android:src="@drawable/btncreate" />
+	    
+	</RelativeLayout>
+    </LinearLayout>
+</ScrollView>

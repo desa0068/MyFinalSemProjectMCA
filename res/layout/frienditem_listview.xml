@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+    
+  <RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/bg_parent_rounded_corner"
+      android:paddingBottom="10dp"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:paddingTop="10dp" >
+	
+	    <TextView
+	        android:id="@+id/tvfrienditemlistname"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignParentRight="true"
+	        android:layout_alignParentTop="true"
+	        android:layout_toRightOf="@+id/imgvfrienditemlist"
+	        android:text="Username"
+	        android:textAppearance="?android:attr/textAppearanceLarge" />
+	
+	    <ImageView
+	        android:id="@+id/imgvfrienditemlist"
+	        android:layout_width="70dp"
+	        android:layout_height="70dp"
+	        android:layout_alignParentLeft="true"
+	        android:layout_alignParentTop="true"
+	        android:src="@drawable/userboy1" />
+
+	    <TextView
+	        android:id="@+id/tvfrienditemrelation"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/tvfrienditemlistname"
+	        android:layout_below="@+id/tvfrienditemlistname"
+	        android:text="Relation"
+	        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+	    <ImageButton
+	        android:id="@+id/btnfrienditemreject"
+	        android:layout_width="70dp"
+	        android:layout_height="50dp"
+	        android:layout_alignRight="@+id/tvfrienditemlistname"
+	        android:layout_alignTop="@+id/btnfrienditemaccept"
+	        android:background="@null"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/frienddetailremovebutton" />
+
+	    <ImageButton
+	        android:id="@+id/btnfrienditemaccept"
+	        android:layout_width="70dp"
+	        android:layout_height="50dp"
+	        android:layout_below="@+id/tvfrienditemrelation"
+	        android:layout_toLeftOf="@+id/btnfrienditemreject"
+	        android:background="@null"
+	        android:scaleType="fitCenter"
+	        android:src="@drawable/friendacceptbutton" />
+
+	</RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+<RelativeLayout
+      android:layout_width="match_parent"
+      android:layout_height="wrap_content"
+      android:layout_marginLeft="5dp"
+      android:layout_marginRight="5dp"
+      android:layout_marginTop="10dp"
+      android:background="@drawable/bg_parent_rounded_corner"
+      android:paddingBottom="10dp"
+      android:paddingLeft="5dp"
+      android:paddingRight="5dp"
+      android:paddingTop="10dp" >
+	
+
+    
+	<TextView 
+	    android:id="@+id/tvaddress"
+	    android:layout_height="wrap_content"
+	    android:layout_width="wrap_content"
+	    android:layout_centerHorizontal="true"
+	    android:text="address"
+	    android:textAppearance="?android:attr/textAppearanceLarge"
+	 />
+	 
+	<TextView
+	    android:id="@+id/lblLatitude"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Latitude"
+	    
+	    android:layout_below="@id/tvaddress"
+	    
+	    />
+	<TextView
+	         android:id="@+id/tvLatitude"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_alignLeft="@+id/lblLongitude"
+	         android:layout_below="@+id/lblLatitude"
+	         android:text="latitude" />
+	<TextView
+	    android:id="@+id/lblLongitude"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="Longitude"
+	    android:layout_below="@id/tvLatitude"
+	    
+	    />
+	
+	<TextView
+	    android:id="@+id/tvLongitude"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content"
+	    android:text="longitude"
+	    android:layout_below="@id/lblLongitude"
+	    
+	    />
+	
+	<TextView
+	         android:id="@+id/lbldatetime"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/tvLongitude"
+	         android:text="Set On"
+	         />
+	
+		<TextView
+
+	         android:id="@+id/tvdatetime"
+	         android:layout_width="wrap_content"
+	         android:layout_height="wrap_content"
+	         android:layout_below="@id/lbldatetime"
+	         android:text="Date"
+	         />
+
+	     <ImageButton
+	         android:id="@+id/btnfrienditemreject"
+	         android:layout_width="70dp"
+	         android:layout_height="50dp"
+	         android:layout_above="@+id/tvLongitude"
+	         android:layout_alignParentRight="true"
+	         android:layout_marginRight="20dp"
+	         android:background="@null"
+	         android:scaleType="fitCenter"
+	         android:src="@drawable/frienddetailremovebutton" />
+
+	     
+	     	    
+	</RelativeLayout>
+
+    
+
+</ScrollView>
